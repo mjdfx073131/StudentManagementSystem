@@ -112,7 +112,7 @@ public class StudentDAO {
 
         List<Student> students = new ArrayList<>();
 
-        String sql = "SELECT * FROM student ORDER BY student_id desc limit ?,?";
+        String sql = "SELECT * FROM student ORDER BY studentID desc limit ?,?";
 
         try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql)) {
 
@@ -124,7 +124,7 @@ public class StudentDAO {
             while (rs.next()) {
                 Student student = new Student();
                 int id = rs.getInt("id");
-                int studentID = rs.getInt("student_id");
+                int studentID = rs.getInt("studentID");
                 String name = rs.getString("name");
                 int age = rs.getInt("age");
                 String sex = rs.getString("sex");
