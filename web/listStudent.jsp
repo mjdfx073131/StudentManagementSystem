@@ -12,7 +12,7 @@
     <script src="js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
 
-    <title>学生管理页面 - 首页</title>
+    <title>StudentManagementSystem - Homepage</title>
 
     <script>
         $(function () {
@@ -28,17 +28,17 @@
 <div class="listDIV">
     <table class="table table-striped table-bordered table-hover table-condensed">
 
-        <caption>学生列表 - 共${page.total}人</caption>
+        <caption>student - total${page.total}</caption>
         <thead>
         <tr class="success">
-            <th>学号</th>
-            <th>姓名</th>
-            <th>年龄</th>
-            <th>性别</th>
-            <th>出生日期</th>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Birthday</th>
 
-            <th>编辑</th>
-            <th>删除</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         </thead>
 
@@ -103,37 +103,37 @@
 
     <div class="panel panel-success">
         <div class="panel-heading">
-            <h3 class="panel-title">增加学生</h3>
+            <h3 class="panel-title">Addstudent</h3>
         </div>
         <div class="panel-body">
 
             <form method="post" action="/addStudent" role="form">
                 <table class="addTable">
                     <tr>
-                        <td>学号：</td>
-                        <td><input type="text" name="studentID" id="studentID" placeholder="请在这里输入学号"></td>
+                        <td>studentID：</td>
+                        <td><input type="text" name="studentID" id="studentID" placeholder="please enter studentid"></td>
                     </tr>
                     <tr>
-                        <td>姓名：</td>
-                        <td><input type="text" name="name" id="name" placeholder="请在这里输入名字"></td>
+                        <td>Name：</td>
+                        <td><input type="text" name="name" id="name" placeholder="please enter name"></td>
                     </tr>
                     <tr>
-                        <td>年龄：</td>
-                        <td><input type="text" name="age" id="age" placeholder="请在这里输入年龄"></td>
+                        <td>Age：</td>
+                        <td><input type="text" name="age" id="age" placeholder="please enter age"></td>
                     </tr>
                     <tr>
-                        <td>性别：</td>
-                        <td><input type="radio" class="radio radio-inline" name="radio" value="男"> 男
-                            <input type="radio" class="radio radio-inline" name="radio" value="女"> 女
+                        <td>Gender：</td>
+                        <td><input type="radio" class="radio radio-inline" name="radio" value="Male"> Male
+                            <input type="radio" class="radio radio-inline" name="radio" value="Female"> Female
                         </td>
                     </tr>
                     <tr>
-                        <td>出生日期：</td>
-                        <td><input type="date" name="birthday" id="birthday" placeholder="请在这里输入出生日期"></td>
+                        <td>Birthday：</td>
+                        <td><input type="date" name="birthday" id="birthday" placeholder="please enter birthday"></td>
                     </tr>
                     <tr class="submitTR">
                         <td colspan="2" align="center">
-                            <button type="submit" class="btn btn-success">提 交</button>
+                            <button type="submit" class="btn btn-success">submit</button>
                         </td>
 
                     </tr>

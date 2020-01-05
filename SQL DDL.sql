@@ -10,3 +10,5 @@ CREATE TABLE student(
   birthday date DEFAULT NULL,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT into student values (1,2,"Kerry Zhou",2,"Male",2020-10-10);
