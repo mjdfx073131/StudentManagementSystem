@@ -1,8 +1,8 @@
 # StudentManagementSystem
 J2EE Development
-#Frontend
+# Frontend
 HTML, CSS, JAVASCRIPT, JQUERY, BOOTSTRAP
-#J2EE:
+# J2EE:
 Tomcat, Servlet, JSP, Filter
-#Database
+# Database
 MySQL
